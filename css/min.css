@@ -1,0 +1,43 @@
+/* xss */
+@media(max-width:349px){
+    .h-shape , .h-shape1 , .h-shape2 , .h-shape3{
+        display: none;
+    }
+    .left-header{
+        margin: 1rem;
+      }
+}
+/* xs */
+@media(min-width:350px){
+    .h-shape , .h-shape1 , .h-shape2 , .h-shape3{
+        display: none;
+    }
+    .left-header{
+        margin: 1rem;
+      }
+}
+/* sm */
+@media(min-width:576px){
+   
+}
+/* md */
+@media(min-width:768px){
+   
+}
+/* lg */
+@media(min-width:992px){
+    
+    .left-header{
+        margin: 2rem;
+      }
+}
+/* xl */
+@media(min-width:1200px){
+    .h-shape , .h-shape1 , .h-shape2 , .h-shape3 {
+        display: flex;
+    }
+}
+/* xxl */
+@media(min-width:1400px){
+   
+}

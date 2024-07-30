@@ -1,0 +1,33 @@
+/* xl */
+@media(max-width:1399px) {
+    /* .left-header{
+        margin: 4rem;
+      } */
+}
+/* lg */
+@media(max-width:1199px) {
+    /* .left-header{
+        margin: 4rem;
+      } */
+}
+/* md */
+@media(max-width:991px) {
+    .h-shape , .h-shape1 , .h-shape2 , .header-content .right-header .h-shape3{
+        display: none;
+    }
+    /* .left-header{
+        margin: 1rem;
+      } */
+}
+/* sm */
+@media(max-width:767px) {
+    .left-header{
+        margin: 2rem;
+      }
+}
+/* xs */
+@media(max-width:575px) {
+    .left-header{
+        margin: 2rem;
+      }
+}
