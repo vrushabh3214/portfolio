@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Trove - Amazing & Delicious Food</title>
+  <!-- 
+    - Table Trove-logos
+  -->
+  <link rel="shortcut icon" href="./assets/images/transparent-icon.png" type="image/png+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    -fontawesome
+   -->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpeg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">table trove</p>
+  </div>
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <div class="separator"></div>
+
+      <a href="tel:+91 9408645627" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+91 9408645627</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">booking@beyond.com</span>
+      </a>
+
+      <div class="separator"></div>
+
+    </div>
+  </div>
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/Untitled-1.png" width="120px" height="50" alt="table-trove - Home">
+      </a>
+      <a href="#" class="logo-1">
+        <img src="./assets/images/Untitled-1.png" width="120px" height="50" alt="table-trove - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo-2">
+          <img src="./assets/images/Untitled-1.png" width="200px" height="50" alt="table-trove - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#restaurants" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Restaurants</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#Contact" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="javascript:vord(0)" class="navbar-link hover-underline">
+              <div class="theme-btn">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Booking Request</p>
+
+          <a href="tel:+91 9408645627" class="body-1 contact-number hover-underline">
+            +91 9408645627
+          </a>
+          <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">booking@beyond.com</a>
+        </div>
+
+      </nav>
+
+      <a href="#Table" class="btn btn-secondary">
+        <span class="text text-1">Find A Table</span>
+
+        <span class="text text-2" aria-hidden="true">Find A Table</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpeg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              For the love of <br>
+              delicious food
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Flavors Inspired by <br>
+              the Seasons
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Where every flavor <br>
+              tells a story
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Come with family & feel the joy of mouthwatering food
+            </p>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#Table" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a>
+
+      </section>
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+          <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+          <p class="section-text">
+            Indulge in our restaurant's pride – top-notch dishes by skilled chefs, crafted with the finest local
+            ingredients. Our diverse menu showcases exceptional flavors in signature dishes.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-1.jpg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Breakfast <br> lunch | dinner</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Appetizers</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Drinks</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim" style="opacity: .15;">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim" style="opacity: .15;">
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+
+            <h2 class="headline-1 section-title">"Unlock The Perfect Dining Experience"</h2>
+
+            <p class="section-text">
+              an invitation to explore culinary excellence at our restaurant. Delight in top-notch dishes crafted by
+              skilled chefs using premium, locally sourced ingredients. Our diverse menu showcases signature dishes
+              renowned for exceptional flavors. Amidst a delightful ambiance and visually stunning presentations, we
+              extend an invitation to join us on a culinary journey, promising a premium dining experience that
+              transcends expectations and unlocks the door to culinary perfection.
+            </p>
+
+            <div class="contact-label">Book Through Call</div>
+
+            <a href="tel:+91 9408645627" class="body-1 contact-number hover-underline">+91 9408645627</a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #Restaurants Gallery
+      -->
+
+      <section class="section Gallery" id="restaurants">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Special Selection</p>
+
+          <h2 class="headline-1 section-title text-center">Awesome Restaurants</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="w-3">
+                <div class="Gallery-img">
+                  <img src="assets/images/ratiada.jpg" alt="menu_1" width="100%" height="100vh">
+                  <div class="overlay">
+                    <h3 id="hotel_name">Rati Kaka ni Bhajipav & Restaurant</h3>
+                    <div class="overlay-btn">
+                      <a href="https://maps.app.goo.gl/eo5V9KdY2RMe1QwZA" target="_blank" class="btn btn-primary">
+                        <span class="text text-1">Location</span>
+                        <span class="text text-2">Location</span>
+                      </a>
+                      <a href="#Table" class="btn btn-primary" onclick="return getDetails('Rati Kaka ni Bhajipav & Restaurant')">
+                        <span class="text text-1">Book table</span>
+                        <span class="text text-2">Book table</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="w-3">
+                <div class="Gallery-img">
+                  <img src="assets/images/ratived.jpg" alt="menu_1" width="100%" height="100vh">
+                  <div class="overlay">
+                    <h3>Rati Kaka ni Bhajipav & Dhosa</h3>
+                    <div class="overlay-btn">
+                      <a href="https://maps.app.goo.gl/Pf5xn2cnH9AGCb3o7" target="_blank" class="btn btn-primary">
+                        <span class="text text-1">Location</span>
+                        <span class="text text-2">Location</span>
+                      </a>
+                      <a href="#Table" class="btn btn-primary"  onclick="return getDetails('Rati Kaka ni Bhajipav & Dhosa')">
+                        <span class="text text-1">Book table</span>
+                        <span class="text text-2">Book table</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="w-3">
+                <div class="Gallery-img">
+                  <img src="assets/images/ratilajamani.jpg" alt="menu_1" width="100%" height="100vh">
+                  <div class="overlay">
+                    <h3>Ratikaka Ni Bhajipav & Restaurant</h3>
+                    <div class="overlay-btn">
+                      <a href="https://maps.app.goo.gl/QUeH8gSpmG8Tu15A9" target="_blank" class="btn btn-primary">
+                        <span class="text text-1">Location</span>
+                        <span class="text text-2">Location</span>
+                      </a>
+                      <a href="#Table" class="btn btn-primary" onclick="return getDetails('Ratikaka Ni Bhajipav & Restaurant')">
+                        <span class="text text-1">Book table</span>
+                        <span class="text text-2">Book table</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="w-3">
+                <div class="Gallery-img">
+                  <img src="assets/images/kaka.jpg" alt="menu_1" width="100%" height="100vh">
+                  <div class="overlay">
+                    <h3>Kaka Ni Bhajipav & Fast-food</h3>
+                    <div class="overlay-btn">
+                      <a href="https://maps.app.goo.gl/NtpmfjNZhaetc3UC6" target="_blank" class="btn btn-primary">
+                        <span class="text text-1">Location</span>
+                        <span class="text text-2">Location</span>
+                      </a>
+                      <a href="#Table" class="btn btn-primary"  onclick="return getDetails('Kaka Ni Bhajipav & Fast-food')">
+                        <span class="text text-1">Book table</span>
+                        <span class="text text-2">Book table</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="w-3">
+                <div class="Gallery-img">
+                  <img src="assets/images/dhosa.jpg" alt="menu_1" width="100%" height="311px">
+                  <div class="overlay">
+                    <h3>Dosa Charcoal Garden Restaurant</h3>
+                    <div class="overlay-btn">
+                      <a href="https://maps.app.goo.gl/w478vam5jjzo768B8" target="_blank" class="btn btn-primary">
+                        <span class="text text-1">Location</span>
+                        <span class="text text-2">Location</span>
+                      </a>
+                      <a href="#Table" class="btn btn-primary" onclick="return getDetails('Dosa Charcoal Garden Restaurant')">
+                        <span class="text text-1">Book table</span>
+                        <span class="text text-2">Book table</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="w-3">
+                <div class="Gallery-img">
+                  <img src="assets/images/fannito.jpg" alt="menu_1" width="100%" height="100vh">
+                  <div class="overlay">
+                    <h3>Fannito Pizza</h3>
+                    <div class="overlay-btn">
+                      <a href="https://maps.app.goo.gl/nKHfswPUjZQzGvW3A" target="_blank" class="btn btn-primary">
+                        <span class="text text-1">Location</span>
+                        <span class="text text-2">Location</span>
+                      </a>
+                      <a href="#Table" class="btn btn-primary"  onclick="return getDetails('Fannito Pizza')">
+                        <span class="text text-1">Book table</span>
+                        <span class="text text-2">Book table</span>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim" style="opacity: .35;">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim" style="opacity: .35;">
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Last night I was going to restaurant With online table reservation through this website. This website is
+            Esay to access & services are good.
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testi-avatar.jpeg" width="100" height="100" loading="lazy" alt="Hensi Ranpariya"
+              class="img">
+
+            <p class="label-2 profile-name">Hensi Ranpariya</p>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+      <section class="reservation" id="Table">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form onsubmit="sendEmail(); reset(); return false;" class="form-left">
+
+              <h2 class="headline-1 text-center">Online Reservation</h2>
+
+              <p class="form-text text-center">
+                Booking request <a href="tel:+91 9408645627" class="link">+91 9408645627</a>
+                or fill out the order form
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Your Name" autocomplete="on" class="input-field" id="name" required>
+
+                <input type="number" name="phone" placeholder="Phone Number" autocomplete="on" class="input-field"
+                  id="phone"   required>
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="number" name="Person" placeholder="Person" autocomplete="on" class="input-field" min="1"
+                    id="person" required>
+
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="text" id="datepicker" name="reservation-date" placeholder="DD-MM-YYYY"
+                    class="input-field" autocomplete="off" required>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="time" name="reservation-time" placeholder="hh-mm-ss" class="input-field input-field-1"
+                    id="time" required>
+
+                </div>
+
+              </div>
+
+              <div class="input-wrapper">
+                <!-- <input type="select" name="Restaurant-Name" placeholder=" Restaurant Name" class="input-field"
+                  id="hotelName" required> -->
+                  <select type="select" name="Restaurant-Name" class="input-field"  required>
+                    <option id="hotelName"></option>
+                    <option value="1-Restaurant"> Restaurant Name</option>
+                    <option value="2-Restaurant"> Rati Kaka ni Bhajipav & Restaurant</option>
+                    <option value="3-Restaurant"> Rati Kaka ni Bhajipav & Dhosa</option>
+                    <option value="4-Restaurant"> Ratikaka Ni Bhajipav & Restaurant</option>
+                    <option value="5-Restaurant"> Kaka Ni Bhajipav & Fast-food</option>
+                    <option value="6-Restaurant"> Dosa Charcoal Garden Restaurant</option>
+                    <option value="7-Restaurant"> Fannito Pizza</option>
+                  </select>
+
+                <input type="Email" name="Email" placeholder="Email" autocomplete="on" class="input-field" id="e-add" required>
+
+              </div>
+
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"
+                id="message"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1" style="text-align: center;">Book A Table</span>
+
+                <span class="text text-2" aria-hidden="true">Book A Table</span>
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Why Choose Us</p>
+
+          <h2 class="headline-1 section-title">Our Strength</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Hygienic Food</h3>
+
+                <p class="label-1 card-text">We ensures cleanliness and sanitary conditions throughout the entire food
+                  production process.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Fresh Environment</h3>
+
+                <p class="label-1 card-text">A fresh environment prioritizes cleanliness, enhancing the overall dining
+                  experience with a pleasant atmosphere.
+
+
+                  .</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Skilled Chefs</h3>
+
+                <p class="label-1 card-text">A skilled chef in a restaurant brings culinary expertise, creativity, and
+                  precision to create exceptional dishes.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Event & Party</h3>
+
+                <p class="label-1 card-text">Customer can also Book Restaurant for their memorable special event & party
+                  with easiest way.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center" style="background-image: url('./assets/images/footer-bg.jpg')"
+    id="Contact">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/Untitled-1.png" width="150px" height="50" loading="lazy"
+              alt="Beyond home">
+          </a>
+
+          <a href="mailto:booking@grilli.com" class="body-4 contact-link">booking@beyond.com</a>
+
+          <a href="tel:+91 9408645627" class="body-4 contact-link">Booking Request : +91 9408645627</a>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#home" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#restaurants" class="label-2 footer-link hover-underline">Restaurants</a>
+          </li>
+
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+          <li>
+            <a href="#Contact" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="javascript:vord(0)" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="javascript:vord(0)" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="javascript:vord(0)" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="javascript:vord(0)" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    function getDetails(name) {
+
+      document.getElementById('hotelName').innerHTML = name;
+    }
+    // date
+
+    $(function () {
+      $("#datepicker").datepicker({ minDate: 0, maxDate: "+1M" });
+    });
+  </script>
+</body>
+
+</html>
