@@ -1,0 +1,72 @@
+/* xl */
+@media(max-width:1399px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+/* lg */
+@media(max-width:1199px) {
+    .container {
+        max-width: 960px;
+    }
+    nav #toggle  {
+        display: flex;
+    }
+    aside{
+        display: none;  
+    }
+    main{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+/* md */
+@media(max-width:991px) {
+    .container {
+        max-width: 720px;
+    }
+    .w-md-1{
+        width: 100%;
+    }
+    .w-md-2{
+        width: 50%;
+        margin-right: 0;
+    }
+    .w-md-3{
+        width: 33.33%;
+    }
+    /* .transactions{
+        width: 100%;
+        padding-right: 25px;
+        margin-top: 40px;
+    } */
+    input{
+        display: none;
+    }
+    .copyright p{
+        margin: 15px 0;
+    }
+}
+/* sm */
+@media(max-width:767px) {
+    .container {
+        max-width: 540px;
+    }
+    .w-sm-1 {
+        width: 100%;
+    }
+    .profit , .report , .transactions , .income{
+        margin-left: 0;
+    }
+}
+/* xs */
+@media(max-width:575px) {
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .w-xs-1 {
+        width: 100%;
+    }
+}

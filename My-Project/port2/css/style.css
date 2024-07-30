@@ -1,0 +1,465 @@
+:root {
+    --dark-color: black;
+    --light-color: white;
+    --text-color: rgb(222, 222, 222);
+    --text-dark: #9e9e9e;
+    --thim-color: #32475cde;
+    --thim-dark: #696cff;
+    --bg-color: rgb(245, 245, 249);
+    --box-shadow: rgba(50, 71, 92, 0.10);
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.d-flex{
+    display: flex;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center {
+    text-align: center;
+}
+.align-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.w-60{
+    width: 66.66%;
+}
+.w-40{
+    width: 33.33%;
+}
+.w-2{
+    width: 50%;
+}
+
+/* aside */
+aside{
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    padding: 10px 15px;
+}
+.logo{
+    margin-top: 12px;
+    padding: 6px 10px 20px 10px;
+}
+.logo a h2{
+    font-size: 30px;
+    color: var(--thim-color);
+    opacity: 0.78;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.menu{
+    overflow: auto;
+    height: calc(100% - 235px);
+    background-color: var(--light-color);
+}
+.menu li a , .menu li span {
+    margin: 10px 0; 
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+.menu li a i{
+    margin: 0 10px;
+}
+.menu p{
+    margin: 10px 0; 
+    padding: 0 16px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--thim-color);
+    opacity: 0.30;
+}
+.menu li:hover{
+    background-color: rgba(105, 108, 255, 0.084);
+    border-radius: 5px;
+}
+.menu li:hover a , .menu li:hover span , .menu li:hover i{
+    color: var(--thim-dark);
+}
+.menu .img img{
+    position: fixed;
+    bottom: 6px;
+    width: 230px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--thim-dark);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+/* main */
+main{
+    background-color: var(--bg-color);
+    width: calc(100% - 260px);
+    margin-left: 260px;
+    padding: 10px 25px 0 25px;
+}
+nav{
+    background-color: var(--light-color);
+    height: 66px;   
+    padding-left: 25px;
+    border-radius: 10px;
+}
+nav , .message , .profit , .revenue , .report , .order , .transactions , .income{
+    box-shadow:  0 1px 6px -2px var(--box-shadow);
+}
+nav #toggle {
+    display: none;
+    margin-right: 15px;
+}
+nav span{
+    font-size: 20px;
+    color: var(--thim-color);
+    font-weight: 900;
+}
+nav input{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+::placeholder{
+    color: var(--thim-color);
+    opacity: 0.30;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav .header-icon i, nav .header-icon span{
+    font-size: 25px;
+    color: var(--thim-color);
+    margin-left: 10px;
+}
+
+nav .header-icon img{
+    display: inline-block;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+.header-icon .img-1{
+    position: relative;
+}
+.header-icon .img-1::after{
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgb(36, 224, 36);
+    border: 2px solid var(--light-color);
+}
+
+.message , .profit , .revenue , .growth , .report , .order , .transactions , .income{
+    border-radius: 10px;
+    background-color: var(--light-color);
+    margin-top: 25px;
+    padding-top: 25px;
+}
+.message-contain{
+    padding: 10px 45px 10px 30px;
+    width: 400px;
+}
+.message h3{
+    color: var(--thim-dark);
+    font-size: 24px;
+    font-weight: 600;
+}
+.message p{
+    color: var(--text-dark);
+    margin: 30px 0 20px 0;
+}
+.message a , .growth-btn a{
+    background-color: rgba(105, 108, 255, 0.143);
+    border-radius: 5px;
+    color: var(--thim-dark);
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.message img{
+    object-fit: cover;
+    height: 184px;
+}
+
+/* Profit */
+.profit , .report , .transactions , .income{
+    padding-left: 25px;
+    margin-left: 25px;
+}
+.profit p{
+    color: var(--thim-color);
+    opacity: 0.5;
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 18px;
+}
+.profit h3{
+    color: var(--thim-color);
+    opacity: 0.85;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin: 6px 0 14px 0;
+}
+.profit h5 , .report h5 , .income-content h5{
+    color: rgb(113,221,55);
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 26px;
+}
+.profit-i{
+    padding-right: 22px;
+}
+.revenue , .growth{
+    padding-top: 0;
+}
+.revenue-item{
+    border-right: 1px solid var(--text-color);
+    height: 100%;
+}
+.revenue-title{
+    padding: 0 25px;
+    margin-bottom: 10px;
+}
+.revenue-title h3 , .revenue-title i{
+    color: var(--thim-color);
+    margin-top: 25px;
+}
+#chart{
+    margin: 0 10px;
+}
+.growth-btn{
+    margin-top: 10px;
+    padding: 8px 14px;
+}
+.growth h3 , .total-orders h4{
+    color: var(--thim-color);
+}
+.growth{
+    margin: 14px;
+}
+.growth-icon{
+    margin: 30px 0;
+    text-align: center;
+}
+.growths{
+    margin-bottom: 20px;
+}
+.growths i{
+    background-color: rgba(88, 90, 235, 0.196);
+    color: var(--thim-dark);
+    border-radius: 6px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.growths span{
+    height: 40px;
+    width: 40px; 
+    background-color: rgba(3, 193, 236, 0.192);
+    border-radius: 6px;
+    line-height: 40px;
+    text-align: center;
+}
+.growths span i{
+    color: rgb(7, 199, 242);
+    background-color: rgba(3, 193, 236, 0.192);  
+}
+.growth-text{
+    margin-left: 10px;
+}
+.growth-text p{
+    font-size: 15px;
+    color: var(--text-dark);
+    text-align: start;
+}
+.growth-text h4{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.report{
+    width: 100%;
+}
+.report-title h3 , .order-titel h3{
+    color: var(--thim-color);
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+.report-title p{
+    color: #ffab00;
+    background-color: #ffaa0022;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 50px;
+    display: inline;
+}
+.report h5{
+    margin: 20px 0 5px 0;
+    padding: 0;
+}
+.report h3 , .transactions h3{
+    font-size: 24px;
+    color: var(--thim-color);
+}
+.order{
+    padding: 25px 25px;
+}
+.order-titel h3{
+    margin-bottom: 5px;
+}
+.order p , .transactions-content p , .income-content p{
+    color: var(--text-dark);
+    font-size: 14px;
+    font-weight: 600;
+}
+.total-orders h4{
+    font-size: 34px;
+}
+.total-orders p , .income-img p{
+    color: var(--text-dark);
+    font-size: 16px;
+}
+.order-ic-1 , .order-ic-2 , .order-ic-3 , .order-ic-4{
+    margin-bottom: 20px;
+}
+.order-ic-1 h4 , .order-ic-2 h4 , .order-ic-3 h4 , .order-ic-4 h4 , .transactions-content h4 , .income-content h4 , .income-img h4{
+    color: var(--thim-color);
+}
+.order-ic-1 i , .order-ic-3 span , .order-ic-4 i{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(105, 108, 255, 0.228);
+    color: rgb(105 108 255);
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.order-ic-2 svg{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(105, 108, 255, 0.228);
+    color: #71dd37;
+    background-color: #71dd372f;
+    padding: 8px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.order-ic-3 span{
+    color: #03c3ec;
+    background-color: #03c1ec23;
+}
+.order-ic-4 i{
+    color: #8592a3;
+    background-color: #8592a330;
+}
+.w-md-2{
+    margin-right: 25px;
+    /* padding-bottom: 25px; */
+}
+.income-content h5{
+    margin: 20px 0 0 8px;
+}
+.income{
+    padding-right: 25px ;
+}
+.income a{
+    color: var(--text-dark);
+    font-size: 18px;
+    margin-bottom: 25px;
+    padding: 8px 10px;
+}
+.income a:focus{
+    background-color: var(--thim-dark);
+    color: var(--light-color);
+    border-radius: 10px;
+}
+.income-content img{
+    margin-right: 15px;
+}
+.income-img img{
+    margin-right: 20px;
+}
+.income-img {
+    /* margin: 15px; */
+    padding: 15px 0;
+}
+.transactions{
+    width: 100%;
+    padding-right: 25px;
+    padding-bottom: 1px;
+    margin-top: 40px;
+}
+.transactions h3 , .transactions-content{
+    margin-bottom: 25px;
+}
+.transactions-content img{
+    margin-right: 15px;
+}
+.transactions-content h4 span{
+    color: var(--text-dark);
+}
+.copyright{
+    padding: 40px 0 25px 0;
+}
+.copyright p{
+    color: var(--text-dark);
+    font-weight: 600;
+}
+.copyright i{
+    color: rgb(255,62,29);
+}
+.copyright a{
+    color: var(--thim-dark);
+}
+.copyright .copyright-a a{
+    margin: 0 10px;
+    font-weight: 600;
+}
+.apexcharts-menu-icon{
+    display: none;
+}
