@@ -1,0 +1,113 @@
+/* xl */
+@media(max-width:1399px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+/* lg */
+@media(max-width:1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+/* md */
+@media(max-width:991px) {
+    .container {
+        max-width: 720px;
+    }
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        opacity: 0;
+    }
+    .toggle a {
+        display: flex;
+    }
+    .Offer-head p,
+    .Menu-title p,
+    .news-head p,
+    .Gallery-title p,
+    .Touch-title p {
+        padding: 0;
+    }
+    .form-img {
+        margin: 10px 0 0 10px;
+    }
+    
+    
+}
+/* sm */
+@media(max-width:767px) {
+    .container {
+        max-width: 540px;
+    }
+    .w-sm-1 {
+        width: 100%;
+    }
+    .about-body {
+        margin-right: 0px;
+    }
+    .about-body a{
+        margin-bottom: 20px;
+    }
+    /* Offer */
+    .w-sm-2 {
+        width: 50%;
+    }
+    .Offer-head p,
+    .Menu-title p,
+    .news-head p,
+    .Gallery-title p,
+    .Touch-title p {
+        padding: 0;
+    }
+    .Menu-title a {
+        color: var(--text-dark);
+        border: 2px solid var(--text-dark);
+        padding: 10px 20px;
+        margin: 50px 5px 40px 5px;
+        /* width: 737px; */
+    }
+    .footer-content {
+        margin-right: 30px;
+    }
+    .footer-lisht {
+        margin-left: 0;
+        margin-bottom: 20px;
+        /* margin-right: 20px; */
+    }
+}
+/* xs */
+@media(max-width:575px) {
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .w-xs-1 {
+        width: 100%;
+    }
+    .Offer-head p,
+    .Menu-title p,
+    .news-head p,
+    .Gallery-title p,
+    .Touch-title p {
+        padding: 0;
+    }
+    .Menu-title a {
+        color: var(--text-dark);
+        border: 2px solid var(--text-dark);
+        padding: 10px 20px;
+        margin: 50px 5px 40px 5px;
+        /* width: 737px; */
+    }
+    .footer-content {
+        margin-right: 30px;
+    }
+    .footer-lisht {
+        margin-left: 0;
+        margin-bottom: 20px;
+        /* margin-right: 20px; */
+    }
+}
+
